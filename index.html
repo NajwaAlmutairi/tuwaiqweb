@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية طويق</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="video-container">
+        <video class="video-bg" autoplay muted loop>
+            <source src="introvidew.mp4" type="video/mp4" width="500px" height="400px">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="content">
+            <nav class="navbar-container" id="navbar">
+                <div class="navbar">
+                    <div class="navbar-logo-container">
+                        <div class="navbar-logo-white">
+                            <img src="logo-white.png" alt="tuwaiqlogo" class="image" id="logo">
+                        </div>
+                    </div>
+                    <div class="navbar-list">
+                        <ul class="links" id="listPages">
+                            <li>الرئيسية</li>
+                            <li>المعسكرات والبرامج</li>
+                            <li>حول الأكاديمية</li>
+                            <li>الأكاديميات التابعة</li>
+                            <li>مركز الاختبارات</li>
+                        </ul>
+                    </div>
+                    <div class="navbar-pages" >
+                        <h3 id="listh31">تسجيل الدخول</h3>
+                        <h3 id="listh32">English</h3>
+                        <label for="menu-toggle" class="menu"><img src="menu.png" alt="menu" class="image"></label>
+                    </div>
+                </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <ul class="nav-links">
+                    <li>الرئيسية</li>
+                    <li>المعسكرات والبرامج</li>
+                    <li>حول الأكاديمية</li>
+                    <li>الأكاديميات التابعة</li>
+                    <li>مركز الاختبارات</li>
+                    <li>تسجيل الدخول</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const logo = document.getElementById('logo')
+            const ulpages = document.getElementById('listPages')
+            const lipages = ulpages.getElementsByTagName("li")
+
+            const listh1 = document.getElementById('listh31')
+            const listh2 = document.getElementById('listh32')
+
+            const navbar = document.getElementById('navbar');
+
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+                logo.src ='logo.png';
+                listh1.style.color ='black'
+                listh2.style.color ='black'
+                for (i in lipages) {
+                    lipages[i].style.color = 'black'
+                }
+            } else {
+                navbar.classList.remove('scrolled');
+                logo.src ='logo-white.png';
+                listh1.style.color = "white";
+                listh2.style.color = "white";
+                for (i in lipages) {
+                    lipages[i].style.color = 'white'
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
