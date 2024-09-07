@@ -32,7 +32,7 @@
                             <li>مركز الاختبارات</li>
                         </ul>
                     </div>
-                    <div class="navbar-pages" >
+                    <div class="navbar-pages">
                         <h3 id="listh31">تسجيل الدخول</h3>
                         <h3 id="listh32">English</h3>
                         <label for="menu-toggle" class="menu"><img src="menu.png" alt="menu" class="image"></label>
@@ -48,9 +48,112 @@
                     <li>تسجيل الدخول</li>
                 </ul>
             </nav>
+
+            <div class="header-container">
+                <div class="header">
+                    <h3>تعلم تقنيات </h3>
+                    <h3>المستقبل</h3>
+                    <div class="start-btn">
+                        <h3>ابدأ الآن</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
+    <div class="programs-section">
+        <h3>المعسكرات والبرامج</h3>
+        <div class="cards-container">
+            <div class="card">
+                <span class="colored-line" id='diff-bg-color'></span>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="title"  id='diff-color'>تحدي</h2>
+                        <h3 class="subtitle"> طويق فلاق بارد</h3>
+                    </div>
+                    <div>
+                        <div class="card-details">
+                            <div class="location">
+                                <img src="location.png" alt="Location Icon" class="icon">
+                                <span class="location-name">الرياض</span>
+                            </div>
+                            <div class="date">
+                                <img src="calendar.png" alt="Calendar Icon" class="icon">
+                                <span class="date-number">1 يوم</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="extra-info">
+                                <img src="calendar.png" alt="Calendar Icon" class="icon">
+                                <span class="extra-text">يبدأ في 10/29/2023</span>
+                            </div>
+                            <div class="card-button" id="diff-color-and-bg">
+                                <h3>التفاصيل</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <span class="colored-line"></span>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="title">برنامج</h2>
+                        <h3 class="subtitle">أساسيات اختبار الاختراق وتقييم الثغرات</h3>
+                    </div>
+                    <div>
+                        <div class="card-details">
+                            <div class="location">
+                                <img src="location.png" alt="Location Icon" class="icon">
+                                <span class="location-name">الرياض</span>
+                            </div>
+                            <div class="date">
+                                <img src="calendar.png" alt="Calendar Icon" class="icon">
+                                <span class="date-number">3 أسابيع</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="extra-info">
+                                <img src="calendar.png" alt="Calendar Icon" class="icon">
+                                <span class="extra-text">يبدأ في 10/29/2023</span>
+                            </div>
+                            <div class="card-button">
+                                <h3> التفاصيل </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <span class="colored-line"></span>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="title">برنامج</h2>
+                        <h3 class="subtitle">مركز عمليات الأمن السيبراني (SOC L1)</h3>
+                    </div>
+                    <div>
+                        <div class="card-details">
+                            <div class="date">
+                                <img src="calendar.png" alt="Calendar Icon" class="icon">
+                                <span class="date-number">أسبوعين</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="extra-info">
+                                <img src="calendar.png" alt="Calendar Icon" class="icon">
+                                <span class="extra-text">يبدأ في 10/29/2023</span>
+                            </div>
+                            <div class="card-button">
+                                <h3> التفاصيل </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uncolored-btu">
+            <h3>المزيد من المعسكرات والبرامج</h3>
+        </div>
+    </div>
     <script>
         window.addEventListener('scroll', function () {
             const logo = document.getElementById('logo')
@@ -64,15 +167,15 @@
 
             if (window.scrollY > 0) {
                 navbar.classList.add('scrolled');
-                logo.src ='logo.png';
-                listh1.style.color ='black'
-                listh2.style.color ='black'
+                logo.src = 'logo.png';
+                listh1.style.color = 'black'
+                listh2.style.color = 'black'
                 for (i in lipages) {
                     lipages[i].style.color = 'black'
                 }
             } else {
                 navbar.classList.remove('scrolled');
-                logo.src ='logo-white.png';
+                logo.src = 'logo-white.png';
                 listh1.style.color = "white";
                 listh2.style.color = "white";
                 for (i in lipages) {

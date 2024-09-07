@@ -12,12 +12,16 @@
       height: auto;
   }
 
+  .icon {
+      width: 1.5vw;
+  }
+
   .video-container {
       position: relative;
       width: 100%;
       height: 100vh;
       overflow: hidden;
-      background-color: #6378f080
+      background: linear-gradient(to right, rgba(126, 156, 177, 0.5), rgba(127, 98, 165, 0.9));
   }
 
   .video-bg {
@@ -37,6 +41,7 @@
       padding: 10px;
   }
 
+  /* start of nav */
   .navbar-container {
       display: flex;
       flex-direction: column;
@@ -62,6 +67,7 @@
 
   .navbar-logo-container {
       width: 21%;
+      cursor: pointer;
   }
 
   .navbar-pages {
@@ -84,11 +90,22 @@
       line-height: 2rem;
   }
 
+  .links li,
+  .logo {
+      cursor: pointer;
+  }
+
+  .navbar-pages h3:hover,
+  .links li:hover {
+      color: #70b9bc;
+  }
+
   .navbar-pages h3 {
       color: white;
       font-size: 1.3rem;
       line-height: 3rem;
       font-weight: 700;
+      cursor: pointer;
   }
 
   .nav-links {
@@ -106,6 +123,189 @@
   .nav-links {
       display: none;
   }
+
+  /* End of nav */
+
+  /* start of header section */
+  .header-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 35vh;
+      z-index: -2;
+      font-size: 5rem;
+      line-height: 1;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+  }
+
+  .start-btn {
+      background-color: #70b9bc;
+      border-radius: 12px;
+      padding: 10px 15px;
+  }
+
+  .start-btn h3 {
+      font-size: 3rem;
+      cursor: pointer;
+
+  }
+
+  /* end of header section */
+
+  /* strat of our program section */
+  .programs-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      /* height: 80vh; */
+      height: 20%;
+      color: rgb(78 55 151);
+      font-size: 2rem;
+      font-weight: 700;
+      background-color: #f2f4f7;
+  }
+
+  /*  */
+  .cards-container {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+  }
+
+  .card {
+      display: flex;
+      justify-content: flex-start;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      /* width: 30vw; */
+      width: 30%;
+      font-size: .5rem;
+      font-weight: 400;
+      color: black;
+  }
+
+  .colored-line {
+      background-color: #9fd5d9;
+      width: 1rem;
+      height: 40vh;
+  }
+
+  .card-content {
+      padding-right: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  .card-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+
+  .card-header h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #9fd5d9;
+  }
+
+
+  .card-header h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+
+
+  .card-details {
+      display: flex;
+      font-size: .7rem;
+      font-weight: bold;
+  }
+
+  .date {
+      padding-right: 10px;
+  }
+
+  .location,
+  .date,
+  .extra-info {
+      display: flex;
+      align-items: center;
+  }
+
+  .card-footer {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      font-size: .7rem;
+      font-weight: bold;
+      justify-content: space-between;
+  }
+
+  .card-button {
+      border: 1px solid #9fd5d9;
+      border-radius: 12px;
+      padding: 5px 20px;
+      cursor: pointer;
+      font-size: .9rem;
+      font-weight: 400;
+      color: #9fd5d9;
+  }
+
+  .card-button:hover {
+      background-color: #9fd5d9;
+      color: white;
+  }
+
+  #diff-bg-color {
+      background-color: #c4e3c3;
+  }
+
+  #diff-color-and-bg {
+      color:#c4e3c3;
+      border: 1px solid#c4e3c3;
+  }
+
+  #diff-color-and-bg:hover {
+      background-color: #c4e3c3;
+      color: white;
+  }
+  
+  #diff-color {
+      color: #c4e3c3;
+  }
+
+  /*  */
+
+  .uncolored-btu {
+      border: 1px solid rgb(127, 98, 165);
+      border-radius: 12px;
+      padding: 10px 15px;
+  }
+
+  .uncolored-btu:hover {
+      background-color: rgb(78 55 151);
+      color: white;
+  }
+
+  .uncolored-btu h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+  }
+
+  /* end of our program section */
 
 
   @media only screen and (max-width: 600px) {
