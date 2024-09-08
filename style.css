@@ -16,6 +16,12 @@
       width: 1.5vw;
   }
 
+  a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+  }
+
   .video-container {
       position: relative;
       width: 100%;
